@@ -45,8 +45,8 @@
     "postinstall": "npx simple-git-hooks"
   },
   "simple-git-hooks": {
-    "pre-commit": "bun run lint && bun run format",
-    "commit-msg": "bun run commitlint --edit $1"
+    "pre-commit": "npm run lint && npm run format",
+    "commit-msg": "npx commitlint --edit $1"
   },
   "dependencies": {
     "@hono/node-server": "^1.14.0",
