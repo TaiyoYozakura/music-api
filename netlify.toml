@@ -1,0 +1,11 @@
+[_unused_header_to_avoid_empty_file_warning]
+[build]
+command = "npm ci && npm run build"
+
+[functions]
+directory = "netlify/functions"
+node_bundler = "esbuild"
+
+[build.environment]
+NODE_VERSION = "20"
+
